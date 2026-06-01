@@ -70,7 +70,7 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky's Trusted Garage Door Repair Service",
+  heroTagline: "Northern Kentucky Garage Door Repair Service",
   heroSubtext: "Broken springs, stuck doors, noisy openers — we fix it fast. Call for same-day service.",
   heroAlt: "Professional garage door technician repairing a residential garage door",
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does garage door spring repair cost?",
       answer:
-        "$150-$350 per spring depending on size. We carry standard springs on our trucks for same-day service. Call (859) 555-0800 for a free quote.",
+        "Call (859) 555-0800 for a free quote. Most repairs are completed same day.",
     },
     {
       question: "My garage door won't open. What should I do?",
@@ -125,7 +125,7 @@ export const siteConfig = {
     {
       question: "How long do garage door springs last?",
       answer:
-        "Standard springs last 7-10 years or about 10,000 cycles. High-cycle springs last 20,000+ cycles. We recommend upgrading to high-cycle when replacing.",
+        "We offer standard and high-cycle spring options We recommend upgrading to high-cycle when replacing.",
     },
     {
       question: "Can I replace a spring myself?",
@@ -140,7 +140,7 @@ export const siteConfig = {
     {
       question: "How much does a new garage door cost?",
       answer:
-        "$800-$3,000+ installed depending on style, material, and insulation. We offer free estimates for new installations.",
+        "Contact us for a free estimate on new garage door installations.",
     },
     {
       question: "Do you service all brands?",
@@ -315,7 +315,7 @@ export const siteConfig = {
       lat: "39.2053",
       lng: "-84.3922",
       intro:
-        "Deer Park is a welcoming, family-friendly community, and NKY Garage Door Pros is proud to bring our garage door repair services to this great neighborhood. From ranch homes along Blue Ash Road to two-story colonials in the side streets, we keep Deer Park garages working safely. We offer flexible scheduling, fair pricing, and the dependable service that this community values.",
+        "Deer Park is a welcoming, family-friendly community, and NKY Garage Door Pros is proud to bring our garage door repair services to this great neighborhood. From ranch homes along Blue Ash Road to two-story colonials in the side streets, we keep Deer Park garages working safely. We offer flexible scheduling, Flexible scheduling, and the dependable service that this community values.",
     },
     {
       name: "Amberly, OH",
@@ -387,7 +387,7 @@ export const siteConfig = {
   testimonials: [
     {
       quote:
-        "My garage door spring broke on a Sunday morning. NKY Garage Door Pros came out the same day and had it fixed in an hour. Fast, fair pricing. Highly recommend in Florence.",
+        "My garage door spring broke on a Sunday morning. NKY Garage Door Pros came out the same day and had it fixed in an hour. Fast, Flexible scheduling. Highly recommend in Florence.",
       name: "Jennifer M.",
       city: "Florence, KY",
     },
@@ -399,7 +399,7 @@ export const siteConfig = {
     },
     {
       quote:
-        "Had a dented panel from backing into the door. They replaced just the panel and color-matched it perfectly. Saved us from buying a whole new door. Best garage door service in NKY.",
+        "Had a dented panel from backing into the door. They replaced just the panel and color-matched it perfectly. Saved us from buying a whole new door. Professional garage door service in NKY.",
       name: "Sarah K.",
       city: "Fort Mitchell, KY",
     },
@@ -416,7 +416,7 @@ export const siteConfig = {
     {
       name: "Jennifer M.",
       location: "Florence, KY",
-      text: "My garage door spring broke on a Sunday morning and I couldn't get my car out. NKY Garage Door Pros came out the same day and had it fixed in an hour. Fast, fair pricing. Best garage door repair service we've used in Northern Kentucky.",
+      text: "My garage door spring broke on a Sunday morning and I couldn't get my car out. NKY Garage Door Pros came out the same day and had it fixed in an hour. Fast, Flexible scheduling. Professional garage door repair service in Northern Kentucky.",
     },
     {
       name: "Robert T.",
@@ -426,7 +426,7 @@ export const siteConfig = {
     {
       name: "Sarah K.",
       location: "Fort Mitchell, KY",
-      text: "I backed into my garage door and dented a panel badly. NKY Garage Door Pros replaced just the panel and color-matched it perfectly. Saved me from buying a whole new door. Best garage door company in Fort Mitchell.",
+      text: "I backed into my garage door and dented a panel badly. NKY Garage Door Pros replaced just the panel and color-matched it perfectly. Saved me from buying a whole new door. Professional garage door company in Fort Mitchell.",
     },
     {
       name: "Mike D.",
@@ -441,17 +441,17 @@ export const siteConfig = {
     {
       name: "Dave S.",
       location: "Newport, KY",
-      text: "Garage door spring snapped and the door was stuck shut. Called NKY Garage Door Pros and they were at our Newport home within two hours. Replaced both springs and the door works better than before. Fair price, fast service.",
+      text: "Garage door spring snapped and the door was stuck shut. Called NKY Garage Door Pros and they were at our Newport home within two hours. Replaced both springs and the door works better than before. Competitive pricing, fast service.",
     },
     {
       name: "Karen L.",
       location: "Edgewood, KY",
-      text: "We use NKY Garage Door Pros for all our rental properties. Spring repairs, opener replacements, maintenance — they do it all. Reliable and affordable. Best garage door company in Northern Kentucky that we trust completely.",
+      text: "We use NKY Garage Door Pros for all our rental properties. Spring repairs, opener replacements, maintenance — they do it all. Reliable and affordable. Professional garage door company in Northern Kentucky.",
     },
     {
       name: "Tom W.",
       location: "Fort Thomas, KY",
-      text: "Our Fort Thomas home has a heavy custom wood garage door that needed new high-cycle springs. These guys knew exactly what to do. Door operates smoothly and quietly now. They also installed a new smart opener we can control from our phones. Best garage door service in NKY.",
+      text: "Our Fort Thomas home has a heavy custom wood garage door that needed new high-cycle springs. These guys knew exactly what to do. Door operates smoothly and quietly now. They also installed a new smart opener we can control from our phones. Professional garage door service in NKY.",
     },
   ] as { name: string; location: string; text: string }[],
 };
