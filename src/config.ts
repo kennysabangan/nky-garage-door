@@ -34,8 +34,8 @@ export interface Testimonial {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Garage Door Pros",
-  phone: "(859) 555-0800",
-  phoneE164: "+18595550800",
+  phone: "(859) 900-8065",
+  phoneE164: "+18599008065",
   domain: "nkygaragedoorpros.com",
   siteUrl: "https://nkygaragedoorpros.com",
 
@@ -106,7 +106,7 @@ export const siteConfig = {
       slug: "panel-replacement",
       description:
         "Damaged panels from dents, rust, or backing into the door? We replace individual panels so you don't need a whole new door. Panels are color-matched to your existing door for a seamless look. We source panels for all major brands including Clopay, Amarr, and Wayne Dalton.",
-      photo: "/photos/screen-cleaning.jpg",
+      photo: "/photos/panel-replacement.jpg",
     },
   ] as Service[],
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does garage door spring repair cost?",
       answer:
-        "Call (859) 555-0800 for a free quote. Most repairs are completed same day.",
+        "Call (859) 900-8065 for a free quote. Most repairs are completed same day.",
     },
     {
       question: "My garage door won't open. What should I do?",
@@ -150,7 +150,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 555-0800. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
+        "Call (859) 900-8065. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky.",
     },
   ] as FAQ[],
 
