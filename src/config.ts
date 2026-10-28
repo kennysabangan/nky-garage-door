@@ -28,8 +28,8 @@ export interface FAQ {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Garage Door Pros",
-  phone: "(859) 900-8065",
-  phoneE164: "+18599008065",
+  phone: "(714) 494-9486",
+  phoneE164: "+17144949486",
   domain: "nkygaragedoorpros.com",
   siteUrl: "https://nkygaragedoorpros.com",
 
@@ -113,7 +113,7 @@ export const siteConfig = {
     {
       question: "How much does garage door spring repair cost?",
       answer:
-        "It depends on the spring type (torsion or extension), how many springs the door uses, and whether you choose standard or high-cycle springs. Call (859) 900-8065 for a free quote.",
+        "It depends on the spring type (torsion or extension), how many springs the door uses, and whether you choose standard or high-cycle springs. Call (714) 494-9486 for a free quote.",
     },
     {
       question: "My garage door won't open. What should I do?",
@@ -133,7 +133,7 @@ export const siteConfig = {
     {
       question: "How soon can you come out?",
       answer:
-        "Call (859) 900-8065 and we'll give you the next available appointment. If your door is stuck open or closed, say so when you call so we can schedule it as early as possible.",
+        "Call (714) 494-9486 and we'll give you the next available appointment. If your door is stuck open or closed, say so when you call so we can schedule it as early as possible.",
     },
     {
       question: "How much does a new garage door cost?",
@@ -148,7 +148,7 @@ export const siteConfig = {
     {
       question: "How do I schedule?",
       answer:
-        "Call (859) 900-8065. Our main service areas are Florence, Covington, Fort Thomas, Newport, Fort Mitchell, Erlanger, Edgewood, and Independence.",
+        "Call (714) 494-9486. Our main service areas are Florence, Covington, Fort Thomas, Newport, Fort Mitchell, Erlanger, Edgewood, and Independence.",
     },
   ] as FAQ[],
 

@@ -492,6 +492,7 @@ const stateAbbr = city.name.includes('OH') ? 'OH' : 'KY';
         return resp.json();
       })
       .then(function() {
+        if (window.nkyTrack) window.nkyTrack('generate_lead', { form: 'city' });
         var card = document.querySelector('.form-card');
         if (card) {
           card.innerHTML = '<div style="text-align:center;padding:48px 24px;">' +
