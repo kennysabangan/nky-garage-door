@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { siteConfig } from '../../config';
+import { siteConfig, seoTitle } from '../../config';
 import type { City } from '../../config';
 
 export function getStaticPaths() {
@@ -39,8 +39,8 @@ const stateAbbr = city.name.includes('OH') ? 'OH' : 'KY';
 ---
 
 <BaseLayout
-  title={`${serviceKeyword.replace(/\b\w/g, (m) => m.toUpperCase())} in ${city.name} | ${businessName}`}
-  description={`Need ${serviceKeyword} in ${city.name}? ${businessName} provides residential and commercial ${serviceKeywordPlural} in ${cityName} and all across ${regionCity}. Call ${phone} for a free estimate.`}
+  title={seoTitle(`Garage Door Repair in ${city.name}`)}
+  description={`Garage door repair in ${city.name}: broken springs, cables, openers, panels, and off-track doors. All major brands. Call ${phone}.`}
   canonicalURL={`${siteUrl}/garage-door/${city.slug}/`}
   schema={[breadcrumbSchema, cityServiceSchema]}
 >
@@ -365,6 +365,15 @@ const stateAbbr = city.name.includes('OH') ? 'OH' : 'KY';
     <p class="content-text">{businessName} repairs garage doors on homes, offices, and commercial buildings throughout {cityName} and the surrounding communities. Whether you need spring repair, opener replacement, or panel fixes, call for a free quote and an upfront price.</p>
     <p class="content-text">Our {serviceKeyword} service in {cityName} includes spring replacement, opener repair and installation, panel replacement, track alignment, and preventative maintenance. We service all major brands and carry common springs and opener parts, so most jobs are completed in a single visit.</p>
   </section>
+
+  {city.extraSections?.map((sec) => (
+    <section class="section">
+      <h2 class="section-title" style="text-align:left;">{sec.heading}</h2>
+      {sec.body.map((para) => (
+        <p class="content-text">{para}</p>
+      ))}
+    </section>
+  ))}
 
   <!-- Mid CTA -->
   <section class="mid-cta">

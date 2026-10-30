@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { siteConfig } from '../config';
 
-const { businessName, phone, phoneE164, serviceKeyword, serviceKeywordPlural, city, region, faqs, services, cities, heroTagline, heroSubtext, heroAlt } = siteConfig;
+const { businessName, phone, phoneE164, serviceKeyword, serviceKeywordPlural, city, region, faqs, services, cities, heroTagline, heroSubtext, heroAlt, homeTitle, homeDescription } = siteConfig;
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -16,8 +16,8 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title={`${businessName} | ${serviceKeyword.replace(/\b\w/g, (m) => m.toUpperCase())} in ${city}`}
-  description={`Need ${serviceKeyword} in ${city}? ${businessName} provides residential and commercial ${serviceKeywordPlural} in Florence, Covington, Fort Mitchell, and all across ${region}. Call ${phone} for a free estimate.`}
+  title={homeTitle}
+  description={homeDescription}
   schema={faqSchema}
 >
 
@@ -355,7 +355,7 @@ const faqSchema = {
   <!-- Content -->
   <section class="section">
     <h2 class="section-title" style="text-align:left;">{serviceKeyword.replace(/\b\w/g, (m) => m.toUpperCase())} in {city}</h2>
-    <p class="content-text">If your garage door is broken, noisy, or stuck, we are the team to call. We provide {serviceKeywordPlural} across {region}.</p>
+    <p class="content-text">If your garage door is broken, noisy, or stuck, we are the team to call. We provide {serviceKeywordPlural} across {city} and the Greater Cincinnati area, including <a href="/garage-door/florence-ky/">garage door repair in Florence</a>, Covington, Erlanger, and Fort Mitchell.</p>
     <p class="content-text">{businessName} repairs garage doors across {city}. We fix springs, openers, panels, and tracks on residential and commercial garage doors. Whether your door won't open, your opener is making noise, or you need a panel replaced, call for a free quote.</p>
     <p class="content-text">We carry common spring sizes and opener parts, so many repairs are finished on the first visit. We service all major brands, including LiftMaster, Chamberlain, Genie, Clopay, Amarr, and Wayne Dalton.</p>
   </section>

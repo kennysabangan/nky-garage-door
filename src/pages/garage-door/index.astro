@@ -29,8 +29,8 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`Garage Door Repair Service Areas in Northern Kentucky | ${businessName}`}
-  description={`${serviceKeyword.replace(/\b\w/g, (m) => m.toUpperCase())} services in ${city}. We provide ${serviceKeywordPlural} on homes, offices, and commercial buildings across ${region}. Call ${phone} for a free estimate.`}
+  title="Garage Door Repair Services | Cincinnati & Northern KY"
+  description={`Garage door spring, opener, cable, panel, and track repair for homes and businesses in Cincinnati & Northern Kentucky. Call ${phone}.`}
   canonicalURL={`${siteUrl}/garage-door/`}
   schema={[breadcrumbSchema, serviceSchema]}
 >
@@ -39,7 +39,7 @@ const breadcrumbSchema = {
 <section class="hero-section">
   <div class="container">
     <h1>{serviceKeyword.replace(/\b\w/g, (m) => m.toUpperCase())} Services in {city}</h1>
-    <p class="hero-sub">Residential {serviceKeyword}, commercial {serviceKeyword}, and more. Serving all of {region}.</p>
+    <p class="hero-sub">Residential and commercial {serviceKeyword} in {city} and the Greater Cincinnati area.</p>
     <PhoneCTA />
   </div>
 </section>

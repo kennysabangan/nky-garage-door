@@ -12,12 +12,20 @@ export interface Service {
   photo: string;
 }
 
+export interface CitySection {
+  heading: string;
+  /** One string per paragraph. */
+  body: string[];
+}
+
 export interface City {
   name: string;
   slug: string;
   lat: string;
   lng: string;
   intro: string;
+  /** Optional city-specific content sections, rendered after the intro. */
+  extraSections?: CitySection[];
 }
 
 export interface FAQ {
@@ -68,7 +76,12 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky Garage Door Repair Service",
+  // Homepage <title> / meta description. Keep title <= 60 chars and
+  // description 70-160 chars (search results truncate past that).
+  homeTitle: "Garage Door Repair Cincinnati & Northern KY | NKY Pros",
+  homeDescription:
+    "Garage door repair in Cincinnati & Northern Kentucky: broken springs, openers, cables, panels, and off-track doors. Free quote: (714) 494-9486.",
+  heroTagline: "Garage Door Repair in Cincinnati & Northern Kentucky",
   heroSubtext: "Broken springs, stuck doors, noisy openers — we fix them. Call for a free quote.",
   heroAlt: "Professional garage door technician repairing a residential garage door",
 
@@ -161,6 +174,27 @@ export const siteConfig = {
       lng: "-84.6266",
       intro:
         "Florence homeowners count on NKY Garage Door Pros when their garage door springs snap or their opener stops working. Whether you're near the Florence Mall area or in a neighborhood off US-42, we carry common spring sizes and opener parts, so many repairs are finished on the first visit. Florence's mix of older ranch homes and newer builds means a wide range of garage door setups, from single-car doors with extension springs to double doors with torsion systems.",
+      extraSections: [
+        {
+          heading: "Common Garage Door Repairs in Florence",
+          body: [
+            "Most garage door repair calls in Florence come down to a few problems. A broken torsion spring is the most common: the door suddenly feels very heavy, the opener strains or can't lift it, or it rises a few inches and stops, and you may see a gap in the spring above the door. Frayed or snapped lift cables, doors that have come off their tracks or hang crooked, and openers that hum, reverse, or don't respond make up most of the rest.",
+            "Much of Florence's housing went up between the 1970s and the 2000s, so many subdivisions have garage doors, springs, and openers that are original to the house or a couple of decades old. Older doors often run on extension springs along the tracks, while newer ones usually have a torsion spring mounted above the door. Hardware wears with age and use, so when one part fails on an older door it's worth having the rest checked during the same visit.",
+          ],
+        },
+        {
+          heading: "What to Tell Us When You Call",
+          body: [
+            "A quick description helps us bring the right parts: whether the door is stuck open or closed, whether you heard a loud bang (often the sound of a spring breaking), whether the door is crooked or a cable is hanging loose, and whether the opener runs, hums, or does nothing at all. If you know the door width (single or double) and the opener brand, mention those too.",
+          ],
+        },
+        {
+          heading: "A Safety Note on Torsion Springs",
+          body: [
+            "Please don't try to adjust, unwind, or remove a torsion spring yourself. These springs hold enough tension to lift the full weight of the door, and releasing that tension without the right tools and training can cause serious injury. The same goes for the cables and bottom brackets connected to them. If a spring or cable has broken, leave the door where it is, keep people and cars clear of it, and don't run the opener until it has been repaired.",
+          ],
+        },
+      ],
     },
     {
       name: "Covington, KY",
@@ -220,3 +254,12 @@ export const siteConfig = {
     },
   ] as City[],
 };
+
+/**
+ * Page <title> helper: appends " | businessName" only when the result stays
+ * within 60 characters; otherwise returns the primary phrase on its own.
+ */
+export function seoTitle(primary: string, brand: string = siteConfig.businessName): string {
+  const full = `${primary} | ${brand}`;
+  return full.length <= 60 ? full : primary;
+}
